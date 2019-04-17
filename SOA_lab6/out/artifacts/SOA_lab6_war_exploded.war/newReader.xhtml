@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:p="http://java.sun.com/jsf/html">
+<h:head>
+
+</h:head>
+<h:body>
+    <h:form id="newReaderForm">
+        <h:panelGrid columns="1">
+            <h3>Add new Reader:</h3>
+            Name: <p:inputText id="readerName" value="#{reader.readerName}"/>
+            Surname: <p:inputText id="readerSurname" value="#{reader.readerSurname}"/>
+            <h:commandButton value="Save" action="#{reader.addReader()}"/>
+        </h:panelGrid>
+        <p:messages/>
+    </h:form>
+</h:body>
+</html>
